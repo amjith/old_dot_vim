@@ -6,10 +6,6 @@
 	path = bundle/NERD-Tree
 	url = git://github.com/vim-scripts/The-NERD-tree.git
 	ignore=dirty
-[submodule "bundle/vimacs"]
-	path = bundle/vimacs
-	url = git://github.com/vim-scripts/Vimacs.git
-	ignore=dirty
 [submodule "bundle/SuperTab"]
 	path = bundle/SuperTab
 	url = git://github.com/vim-scripts/SuperTab.git
