@@ -1,0 +1,39 @@
+[submodule "bundle/NERD-Commenter"]
+	path = bundle/NERD-Commenter
+	url = git://github.com/vim-scripts/The-NERD-Commenter.git
+[submodule "bundle/NERD-Tree"]
+	path = bundle/NERD-Tree
+	url = git://github.com/vim-scripts/The-NERD-tree.git
+[submodule "bundle/vimacs"]
+	path = bundle/vimacs
+	url = git://github.com/vim-scripts/Vimacs.git
+[submodule "bundle/SuperTab"]
+	path = bundle/SuperTab
+	url = git://github.com/vim-scripts/SuperTab.git
+[submodule "bundle/Solarized"]
+	path = bundle/Solarized
+	url = git://github.com/vim-scripts/Solarized.git
+[submodule "bundle/vimwiki"]
+	path = bundle/vimwiki
+	url = git://github.com/vim-scripts/vimwiki.git
+[submodule "bundle/python"]
+	path = bundle/python
+	url = git://github.com/vim-scripts/python.vim.git
+[submodule "bundle/ctags"]
+	path = bundle/ctags
+	url = git://github.com/vim-scripts/ctags.vim.git
+[submodule "bundle/closetag"]
+	path = bundle/closetag
+	url = git://github.com/vim-scripts/closetag.vim.git
+[submodule "bundle/calendar"]
+	path = bundle/calendar
+	url = git://github.com/vim-scripts/calendar.vim--Matsumoto.git
+[submodule "bundle/Gundo"]
+	path = bundle/Gundo
+	url = git://github.com/vim-scripts/Gundo.git
+[submodule "bundle/coffee-script"]
+	path = bundle/coffee-script
+	url = git://github.com/vim-scripts/vim-coffee-script.git
+[submodule "bundle/Auto-Pairs"]
+	path = bundle/Auto-Pairs
+	url = git://github.com/vim-scripts/Auto-Pairs.git
