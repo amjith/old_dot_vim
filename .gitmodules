@@ -1,12 +1,15 @@
 [submodule "bundle/NERD-Commenter"]
 	path = bundle/NERD-Commenter
 	url = git://github.com/vim-scripts/The-NERD-Commenter.git
+	ignore=dirty
 [submodule "bundle/NERD-Tree"]
 	path = bundle/NERD-Tree
 	url = git://github.com/vim-scripts/The-NERD-tree.git
+	ignore=dirty
 [submodule "bundle/vimacs"]
 	path = bundle/vimacs
 	url = git://github.com/vim-scripts/Vimacs.git
+	ignore=dirty
 [submodule "bundle/SuperTab"]
 	path = bundle/SuperTab
 	url = git://github.com/vim-scripts/SuperTab.git
@@ -16,6 +19,7 @@
 [submodule "bundle/vimwiki"]
 	path = bundle/vimwiki
 	url = git://github.com/vim-scripts/vimwiki.git
+	ignore=dirty
 [submodule "bundle/python"]
 	path = bundle/python
 	url = git://github.com/vim-scripts/python.vim.git
@@ -31,6 +35,7 @@
 [submodule "bundle/Gundo"]
 	path = bundle/Gundo
 	url = git://github.com/vim-scripts/Gundo.git
+	ignore=dirty
 [submodule "bundle/coffee-script"]
 	path = bundle/coffee-script
 	url = git://github.com/vim-scripts/vim-coffee-script.git
