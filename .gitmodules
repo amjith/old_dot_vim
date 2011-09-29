@@ -38,3 +38,18 @@
 [submodule "bundle/Auto-Pairs"]
 	path = bundle/Auto-Pairs
 	url = git://github.com/vim-scripts/Auto-Pairs.git
+[submodule "bundle/align"]
+	path = bundle/align
+	url = git://github.com/vim-scripts/Align.git
+[submodule "bundle/grep"]
+	path = bundle/grep
+	url = git://github.com/vim-scripts/grep.vim.git
+[submodule "bundle/vimacs"]
+	path = bundle/vimacs
+	url = git://github.com/vim-scripts/Vimacs.git
+[submodule "bundle/increment"]
+	path = bundle/increment
+	url = git://github.com/vim-scripts/increment.vim.git
+[submodule "bundle/matchit"]
+	path = bundle/matchit
+	url = git://github.com/vim-scripts/matchit.zip.git
