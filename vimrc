@@ -2,9 +2,11 @@ call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
 set nocompatible
-"Color
-set background=dark
-colorscheme solarized
+
+if has("gui_macvim")
+    set background=dark
+    colorscheme solarized
+endif
 
 " Uncomment the next line to make Vim more Vi-compatible
 " NOTE: debian.vim sets 'nocompatible'.  Setting 'compatible' changes numerous
