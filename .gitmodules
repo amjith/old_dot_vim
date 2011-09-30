@@ -61,3 +61,6 @@
 [submodule "bundle/surround"]
 	path = bundle/surround
 	url = git://github.com/vim-scripts/surround.vim.git
+[submodule "bundle/fuzzy_finder"]
+	path = bundle/fuzzy_finder
+	url = git://github.com/vim-scripts/FuzzyFinder.git
