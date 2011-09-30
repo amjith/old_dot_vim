@@ -62,11 +62,3 @@
 	path = bundle/surround
 	url = git://github.com/vim-scripts/surround.vim.git
 	ignore=dirty
-[submodule "bundle/fuzzy_finder"]
-	path = bundle/fuzzy_finder
-	url = git://github.com/vim-scripts/FuzzyFinder.git
-	ignore=dirty
-[submodule "bundle/l9"]
-	path = bundle/l9
-	url = git://github.com/vim-scripts/L9.git
-	ignore=dirty
