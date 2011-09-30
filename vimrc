@@ -1,6 +1,11 @@
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
+set nocompatible
+"Color
+set background=dark
+colorscheme solarized
+
 " Uncomment the next line to make Vim more Vi-compatible
 " NOTE: debian.vim sets 'nocompatible'.  Setting 'compatible' changes numerous
 " options, so any other options should be set AFTER setting 'compatible'.
@@ -11,10 +16,6 @@ call pathogen#helptags()
 if has("syntax")
   syntax on
 endif
-
-" If using a dark background within the editing area and syntax highlighting
-" turn on this option as well
-"set background=dark
 
 " Uncomment the following to have Vim jump to the last position when
 " reopening a file
@@ -38,6 +39,10 @@ set incsearch		" Incremental search
 set autowrite		" Automatically save before commands like :next and :make
 set hidden              " Hide buffers when they are abandoned
 set mouse=a		" Enable mouse usage (all modes)
+set backspace=indent,eol,start			" backspace for dummys
+set linespace=0					        " No extra spaces between rows
+set winminheight=0				        " windows can be 0 line high 
+
 
 " No bells
 set visualbell t_vb=
@@ -70,12 +75,37 @@ if has("autocmd")
   augroup END
 endif
 
-set autochdir   " Make the cur dir of vim to match the dir of the file that is currently open.
-
 nnoremap j gj
 nnoremap k gk
 
 " Visually select the text that was last edited/pasted
 nmap gV `[v`]
 
+" Use system clipboard
+set clipboard=unnamed
 
+set nowrap                     			" wrap long lines
+
+let mapleader = ','
+
+" Set cwd from the path of the file being edited
+set autochdir
+
+"Use option key in mac as meta key
+if has("gui_macvim")
+    set macmeta
+endif 
+
+set tm=500
+
+" Vimwiki home
+let g:vimwiki_list = [{'path': '~/notes/'}]
+
+
+"Delete trailing white space, useful for Python ;)
+func! DeleteTrailingWS()
+  exe "normal mz"
+  %s/\s\+$//ge
+  exe "normal `z"
+endfunc
+autocmd BufWrite *.py :call DeleteTrailingWS()
