@@ -62,3 +62,6 @@
 	path = bundle/surround
 	url = git://github.com/vim-scripts/surround.vim.git
 	ignore=dirty
+[submodule "bundle/minibufexpl"]
+	path = bundle/minibufexpl
+	url = git://github.com/fholgado/minibufexpl.vim.git

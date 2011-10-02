@@ -82,6 +82,15 @@ nnoremap k gk
 
 " Visually select the text that was last edited/pasted
 nmap gV `[v`]
+nnoremap cn :cn<CR>
+nnoremap cp :cp<CR>
+nnoremap <C-h> :bp<CR>
+nnoremap <C-l> :bn<CR>
+"nnoremap <C-h> <C-w>h
+"nnoremap <C-l> <C-w>l
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+
 
 " Use system clipboard
 set clipboard=unnamed
