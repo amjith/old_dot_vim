@@ -121,3 +121,8 @@ func! DeleteTrailingWS()
 endfunc
 autocmd BufWrite *.py :call DeleteTrailingWS()
 set wildmenu
+
+"Delete without clobbering clipboard
+noremap x "_x
+"Paste without clobbering clipboard in visual mode
+vnoremap p "_dP
