@@ -79,6 +79,8 @@ if has("autocmd")
   augroup END
 endif
 
+
+" Treat j and k as up and down on long lines in wrap mode.
 nnoremap j gj
 nnoremap k gk
 
