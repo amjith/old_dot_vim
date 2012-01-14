@@ -51,9 +51,9 @@ set visualbell t_vb=
 set number		" Line number
 
 " Tabs will be spaces
-set tabstop=2
-set softtabstop=2
-set shiftwidth=2
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
 set expandtab
 
 set backupdir=~/tmp
