@@ -6,6 +6,8 @@ set nocompatible
 if has("gui_macvim")
     set background=dark
     colorscheme solarized
+else
+    colorscheme peachpuff
 endif
 
 " Uncomment the next line to make Vim more Vi-compatible
