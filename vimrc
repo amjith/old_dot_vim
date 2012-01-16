@@ -129,6 +129,6 @@ set wildmenu
 " Leave the statusline visible
 set laststatus=2
 "Delete without clobbering clipboard
-noremap x "_x
+nnoremap x "_x
 "Paste without clobbering clipboard in visual mode
 vnoremap p "_dP
