@@ -3,7 +3,7 @@ call pathogen#helptags()
 
 set nocompatible
 
-if has("gui_macvim")
+if has("gui_running")
     set background=dark
     colorscheme solarized
 else
