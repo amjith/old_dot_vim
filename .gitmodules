@@ -9,9 +9,11 @@
 [submodule "bundle/SuperTab"]
 	path = bundle/SuperTab
 	url = git://github.com/vim-scripts/SuperTab.git
+	ignore=dirty
 [submodule "bundle/Solarized"]
 	path = bundle/Solarized
 	url = git://github.com/vim-scripts/Solarized.git
+	ignore=dirty
 [submodule "bundle/vimwiki"]
 	path = bundle/vimwiki
 	url = git://github.com/vim-scripts/vimwiki.git
@@ -19,15 +21,19 @@
 [submodule "bundle/python"]
 	path = bundle/python
 	url = git://github.com/vim-scripts/python.vim.git
+	ignore=dirty
 [submodule "bundle/ctags"]
 	path = bundle/ctags
 	url = git://github.com/vim-scripts/ctags.vim.git
+	ignore=dirty
 [submodule "bundle/closetag"]
 	path = bundle/closetag
 	url = git://github.com/vim-scripts/closetag.vim.git
+	ignore=dirty
 [submodule "bundle/calendar"]
 	path = bundle/calendar
 	url = git://github.com/vim-scripts/calendar.vim--Matsumoto.git
+	ignore=dirty
 [submodule "bundle/Gundo"]
 	path = bundle/Gundo
 	url = git://github.com/vim-scripts/Gundo.git
@@ -35,9 +41,11 @@
 [submodule "bundle/coffee-script"]
 	path = bundle/coffee-script
 	url = git://github.com/vim-scripts/vim-coffee-script.git
+	ignore=dirty
 [submodule "bundle/Auto-Pairs"]
 	path = bundle/Auto-Pairs
 	url = git://github.com/vim-scripts/Auto-Pairs.git
+	ignore=dirty
 [submodule "bundle/align"]
 	path = bundle/align
 	url = git://github.com/vim-scripts/Align.git
@@ -72,3 +80,4 @@
 [submodule "bundle/python-mode"]
 	path = bundle/python-mode
 	url = git://github.com/klen/python-mode.git
+	ignore=dirty

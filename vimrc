@@ -3,9 +3,9 @@ call pathogen#helptags()
 
 set nocompatible
 
+set background=light
 if has("gui_macvim")
-    set background=dark
-    colorscheme solarized
+    colorscheme peachpuff
 else
     colorscheme peachpuff
 endif
@@ -132,3 +132,6 @@ set laststatus=2
 nnoremap x "_x
 "Paste without clobbering clipboard in visual mode
 vnoremap p "_dP
+
+"Set colorcolumn to indicate the 80 char violation"
+set colorcolumn=80
