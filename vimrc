@@ -135,3 +135,7 @@ vnoremap p "_dP
 
 "Set colorcolumn to indicate the 80 char violation"
 set colorcolumn=80
+
+" Search for tags file up the directory tree
+set tags=tags;/
+
