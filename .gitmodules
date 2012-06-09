@@ -78,3 +78,7 @@
 	path = bundle/python-mode
 	url = git://github.com/klen/python-mode.git
 	ignore=dirty
+[submodule "bundle/smartinput"]
+	path = bundle/smartinput
+	url = git://github.com/kana/vim-smartinput.git
+	ignore=dirty
