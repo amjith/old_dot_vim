@@ -139,3 +139,5 @@ set colorcolumn=80
 " Search for tags file up the directory tree
 set tags=tags;/
 
+nnoremap <F5> "=strftime("%y/%m/%d")<CR>P
+inoremap <F5> <C-R>=strftime("%y/%m/%d")<CR>
