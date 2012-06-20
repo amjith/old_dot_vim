@@ -82,3 +82,7 @@
 	path = bundle/smartinput
 	url = git://github.com/kana/vim-smartinput.git
 	ignore=dirty
+[submodule "bundle/fugitive"]
+	path = bundle/fugitive
+	url = git://github.com/tpope/vim-fugitive.git
+	ignore=dirty
