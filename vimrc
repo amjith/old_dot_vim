@@ -132,3 +132,12 @@ set laststatus=2
 nnoremap x "_x
 "Paste without clobbering clipboard in visual mode
 vnoremap p "_dP
+
+"Set colorcolumn to indicate the 80 char violation"
+set colorcolumn=80
+
+" Search for tags file up the directory tree
+set tags=tags;/
+
+nnoremap <F5> "=strftime("%y/%m/%d")<CR>P
+inoremap <F5> <C-R>=strftime("%y/%m/%d")<CR>

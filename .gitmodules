@@ -42,10 +42,6 @@
 	path = bundle/coffee-script
 	url = git://github.com/vim-scripts/vim-coffee-script.git
 	ignore=dirty
-[submodule "bundle/Auto-Pairs"]
-	path = bundle/Auto-Pairs
-	url = git://github.com/vim-scripts/Auto-Pairs.git
-	ignore=dirty
 [submodule "bundle/align"]
 	path = bundle/align
 	url = git://github.com/vim-scripts/Align.git
@@ -81,4 +77,12 @@
 [submodule "bundle/python-mode"]
 	path = bundle/python-mode
 	url = git://github.com/klen/python-mode.git
+	ignore=dirty
+[submodule "bundle/smartinput"]
+	path = bundle/smartinput
+	url = git://github.com/kana/vim-smartinput.git
+	ignore=dirty
+[submodule "bundle/fugitive"]
+	path = bundle/fugitive
+	url = git://github.com/tpope/vim-fugitive.git
 	ignore=dirty
