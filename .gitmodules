@@ -46,10 +46,6 @@
 	path = bundle/align
 	url = git://github.com/vim-scripts/Align.git
 	ignore=dirty
-[submodule "bundle/grep"]
-	path = bundle/grep
-	url = git://github.com/vim-scripts/grep.vim.git
-	ignore=dirty
 [submodule "bundle/vimacs"]
 	path = bundle/vimacs
 	url = git://github.com/vim-scripts/Vimacs.git
@@ -86,3 +82,6 @@
 	path = bundle/fugitive
 	url = git://github.com/tpope/vim-fugitive.git
 	ignore=dirty
+[submodule "bundle/taglist"]
+	path = bundle/taglist
+	url = git://github.com/vim-scripts/taglist.vim.git

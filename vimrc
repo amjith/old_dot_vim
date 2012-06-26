@@ -88,10 +88,12 @@ nnoremap k gk
 nmap gV `[v`]
 nnoremap cn :cn<CR>
 nnoremap cp :cp<CR>
-nnoremap <C-h> :bp<CR>
-nnoremap <C-l> :bn<CR>
-"nnoremap <C-h> <C-w>h
-"nnoremap <C-l> <C-w>l
+nnoremap <C-n> :bn<CR>
+nnoremap <C-p> :bp<CR>
+"nnoremap <C-h> :bp<CR>
+"nnoremap <C-l> :bn<CR>
+nnoremap <C-h> <C-w>h
+nnoremap <C-l> <C-w>l
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 
@@ -110,6 +112,8 @@ set autochdir
 if has("gui_macvim")
     set macmeta
 endif 
+
+let Tlist_Ctags_Cmd='/usr/local/bin/ctags'
 
 set tm=500
 
@@ -141,3 +145,7 @@ set tags=tags;/
 
 nnoremap <F5> "=strftime("%y/%m/%d")<CR>P
 inoremap <F5> <C-R>=strftime("%y/%m/%d")<CR>
+
+" Ignore pylint errors.
+let g:pymode_lint_ignore = "E501,E302"
+
