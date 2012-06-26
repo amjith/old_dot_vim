@@ -86,3 +86,7 @@
 	path = bundle/taglist
 	url = git://github.com/vim-scripts/taglist.vim.git
 	ignore=dirty
+[submodule "bundle/EasyGrep"]
+	path = bundle/EasyGrep
+	url = git://github.com/vim-scripts/EasyGrep.git
+	ignore=dirty
