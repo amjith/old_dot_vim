@@ -34,18 +34,20 @@ if has("autocmd")
 endif
 
 
-set hlsearch		" Highlight search term
-set showcmd		" Show (partial) command in status line.
-set showmatch		" Show matching brackets.
-set ignorecase		" Do case insensitive matching
-set smartcase		" Do smart case matching
-set incsearch		" Incremental search
-set autowrite		" Automatically save before commands like :next and :make
-set hidden              " Hide buffers when they are abandoned
-set mouse=a		" Enable mouse usage (all modes)
+set hlsearch		 " Highlight search term
+set showcmd		     " Show (partial) command in status line.
+set showmatch		 " Show matching brackets.
+set ignorecase		 " Do case insensitive matching
+set smartcase		 " Do smart case matching
+set incsearch		 " Incremental search
+set autowrite		 " Automatically save before commands like :next and :make
+set hidden           " Hide buffers when they are abandoned
+set mouse=a		     " Enable mouse usage (all modes)
 set backspace=indent,eol,start			" backspace for dummys
-set linespace=0					        " No extra spaces between rows
-set winminheight=0				        " windows can be 0 line high 
+set linespace=0		 " No extra spaces between rows
+set winminheight=0	 " windows can be 0 line high 
+set infercase        " Fix completion to work the same as search + smartcase
+set ruler            " Show cursor position all the time
 
 
 " No bells
@@ -113,6 +115,7 @@ if has("gui_macvim")
     set macmeta
 endif 
 
+" Use the excuberant tags instead of the shitty ctags in OS X
 let Tlist_Ctags_Cmd='/usr/local/bin/ctags'
 
 set tm=500
@@ -120,14 +123,6 @@ set tm=500
 " Vimwiki home
 let g:vimwiki_list = [{'path': '~/notes/'}]
 
-
-"Delete trailing white space, useful for Python ;)
-func! DeleteTrailingWS()
-  exe "normal mz"
-  %s/\s\+$//ge
-  exe "normal `z"
-endfunc
-autocmd BufWrite *.py :call DeleteTrailingWS()
 set wildmenu
 
 " Leave the statusline visible
@@ -143,9 +138,28 @@ set colorcolumn=80
 " Search for tags file up the directory tree
 set tags=tags;/
 
+" F5 to insert current date.
 nnoremap <F5> "=strftime("%y/%m/%d")<CR>P
 inoremap <F5> <C-R>=strftime("%y/%m/%d")<CR>
 
-" Ignore pylint errors.
-let g:pymode_lint_ignore = "E501,E302"
 
+" F2 to toggle paste-mode.
+set pastetoggle=<F2>
+
+" Ignore pylint errors. 
+" E302 - Two blank lines before function definitions.
+" E701 - multiple statmenets on one line (colon)
+let g:pymode_lint_ignore = "E501,E302,E701,E128,E126"
+
+" NERDTree Toggle.
+map <leader>n :NERDTreeToggle<CR>
+
+" Powerline Config
+let g:Powerline_symbols = 'fancy'
+let g:Powerline_colorscheme = 'skwp'
+
+set t_Co=256 " Explicitly tell vim to support 256 colors
+
+" Highlight chars greater than 80 chars
+"highlight LongLine ctermbg=green guibg=green
+"match LongLine '\%>80v.\+'
