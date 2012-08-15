@@ -90,3 +90,7 @@
 	path = bundle/EasyGrep
 	url = git://github.com/vim-scripts/EasyGrep.git
 	ignore=dirty
+[submodule "bundle/gist-vim"]
+	path = bundle/gist-vim
+	url = git://github.com/mattn/gist-vim.git
+	ignore=dirty
