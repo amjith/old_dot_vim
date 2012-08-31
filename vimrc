@@ -150,6 +150,7 @@ set pastetoggle=<F2>
 " E302 - Two blank lines before function definitions.
 " E701 - multiple statmenets on one line (colon)
 let g:pymode_lint_ignore = "E501,E302,E701,E128,E126"
+let g:pymode_lint_cwindow = 0
 
 " NERDTree Toggle.
 map <leader>n :NERDTreeToggle<CR>
